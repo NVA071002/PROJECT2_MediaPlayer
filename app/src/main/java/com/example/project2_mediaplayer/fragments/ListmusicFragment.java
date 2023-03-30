@@ -50,7 +50,7 @@ public class ListmusicFragment extends Fragment {
     private List<Music> getListMusic() {
         List<Music> list = new ArrayList<>();
         list.add(new Music(R.drawable.music1,"Anh nho ra","Vu"));
-        list.add(new Music(R.drawable.music1,"Anh nho ra","Vu1"));
+        list.add(new Music(R.drawable.music2,"Bone","Imagine Dragons"));
         list.add(new Music(R.drawable.music1,"Anh nho ra","Vu2"));
         list.add(new Music(R.drawable.music1,"Anh nho ra","Vu3"));
         list.add(new Music(R.drawable.music1,"Anh nho ra","Vu4"));

@@ -5,19 +5,29 @@ public class Music {
     private String musicName;
     private String musicAuthor;
 
-    private String musicImage;
 
-    public Music(int musicId, String musicName, String musicAuthor, String musicImage) {
-        this.musicId = musicId;
-        this.musicName = musicName;
-        this.musicAuthor = musicAuthor;
-        this.musicImage = musicImage;
-    }
+
+    private int resource;
 
     public Music(int musicId, String musicName, String musicAuthor) {
         this.musicId = musicId;
         this.musicName = musicName;
         this.musicAuthor = musicAuthor;
+    }
+
+    public Music(int musicId, String musicName, String musicAuthor, int resource) {
+        this.musicId = musicId;
+        this.musicName = musicName;
+        this.musicAuthor = musicAuthor;
+        this.resource = resource;
+    }
+
+    public int getResource() {
+        return resource;
+    }
+
+    public void setResource(int resource) {
+        this.resource = resource;
     }
 
     public int getMusicId() {
@@ -44,11 +54,5 @@ public class Music {
         this.musicAuthor = musicAuthor;
     }
 
-    public String getMusicImage() {
-        return musicImage;
-    }
 
-    public void setMusicImage(String musicImage) {
-        this.musicImage = musicImage;
-    }
 }
